@@ -1,0 +1,51 @@
+
+$browser = new Browser();
+if( $browser->getBrowser() == Browser::BROWSER_FIREFOX && $browser->getVersion() >= 2 ) {
+    echo '¬ы используете браузер FireFox версии 2 или выше';
+}
+
+
+—крипт определ€ет следующие операционные системы:
+Windows (Browser::PLATFORM_WINDOWS)
+Windows CE (Browser::PLATFORM_WINDOWS_CE)
+Apple (Browser::PLATFORM_APPLE)
+Linux (Browser::PLATFORM_LINUX)
+Android (Browser::PLATFORM_ANDROID)
+OS/2 (Browser::PLATFORM_OS2)
+BeOS (Browser::PLATFORM_BEOS)
+iPhone (Browser::PLATFORM_IPHONE)
+iPod (Browser::PLATFORM_IPOD)
+BlackBerry (Browser::PLATFORM_BLACKBERRY)
+FreeBSD (Browser::PLATFORM_FREEBSD)
+OpenBSD (Browser::PLATFORM_OPENBSD)
+NetBSD (Browser::PLATFORM_NETBSD)
+SunOS (Browser::PLATFORM_SUNOS)
+OpenSolaris (Browser::PLATFORM_OPENSOLARIS)
+iPad (Browser::PLATFORM_IPAD)
+—крипт определ€ет следующие браузеры и их версии:
+
+Opera (Browser::BROWSER_OPERA)
+WebTV (Browser::BROWSER_WEBTV)
+NetPositive (Browser::BROWSER_NETPOSITIVE)
+Internet Explorer (Browser::BROWSER_IE)
+Pocket Internet Explorer (Browser::BROWSER_POCKET_IE)
+Galeon (Browser::BROWSER_GALEON)
+Konqueror (Browser::BROWSER_KONQUEROR)
+iCab (Browser::BROWSER_ICAB)
+OmniWeb (Browser::BROWSER_OMNIWEB)
+Phoenix (Browser::BROWSER_PHOENIX)
+Firebird (Browser::BROWSER_FIREBIRD)
+Firefox (Browser::BROWSER_FIREFOX)
+Mozilla (Browser::BROWSER_MOZILLA)
+Amaya (Browser::BROWSER_AMAYA)
+Lynx (Browser::BROWSER_LYNX)
+Safari (Browser::BROWSER_SAFARI)
+iPhone (Browser::BROWSER_IPHONE)
+iPod (Browser::BROWSER_IPOD)
+GoogleТs Android(Browser::BROWSER_ANDROID)
+GoogleТs Chrome(Browser::BROWSER_CHROME)
+GoogleBot(Browser::BROWSER_GOOGLEBOT)
+Yahoo!Тs Slurp(Browser::BROWSER_SLURP)
+W3CТs Validator(Browser::BROWSER_W3CVALIDATOR)
+BlackBerry(Browser::BROWSER_BLACKBERRY)
+

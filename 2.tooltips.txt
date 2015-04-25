@@ -1,0 +1,22 @@
+Скрипт для вывода всплывающих подсказок
+Добавляем следующий код в секцию head страницы, на которой нужно организовать подсказки:
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="speechbubbles.css" />
+<script src="speechbubbles.js"></script>
+<script type="text/javascript">
+	jQuery(function($){ //По наступлению события document.ready
+ 		//Применяем подсказки для ссылок с классом "addspeech", а текст для подсказок будем искать в файле 'speechdata.txt'
+		$('a.addspeech').speechbubble({url:'speechdata.txt'})
+	)
+</script>
+
+В HTML коде установить для ссылок с подсказками класс addspeech и значение атрибута rel,  
+которое соответствует тексту нужной подсказки в файле speechdata.txt
+<p>Например, &quot;<a href="http://ruseller.com/lessons.php?rub=37&id=296" class="addspeech" rel="#speechbubble1">Загрузка больших файлов на сервер используя PHP</a>&quot;,
+или &quot;<a href="http://ruseller.com/lessons.php?rub=2&id=67" class="addspeech" rel="#speechbubble2">Двойные кавычки для цитаты</a>&quot;, 
+или &quot;<a href="http://ruseller.com/lessons.php?rub=32&id=92" class="addspeech" rel="#speechbubble3">Меняющийся информационный блок на jQuery</a>&quot;,
+или &quot;<a href="http://ruseller.com/lessons.php?rub=40&id=513" class="addspeech" rel="#speechbubble4">Создание пользовательской панели опций в Wordpress</a>&quot;.</p>
+
+Текст подсказки устанавливается в качестве значения атрибута title ссылки с классом addspeech :
+<a class="addspeech" href="#" title="Текст подсказки">Текст ссылки</a>

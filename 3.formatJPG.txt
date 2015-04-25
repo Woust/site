@@ -1,0 +1,16 @@
+Формирование непрямоугольных областей из JPEG изображений
+Загружаем скрипт (пакет содержит jQuery 1.6.4 и excanvas 3).
+Включаем файлы в секцию head документа:
+<script src="/path/to/js/jquery-1.6.2.min.js"></script>
+<!--[if lt IE 9 ]>
+ <script src="/path/to/js/excanvas/excanvas.compiled.js"></script>
+<![endif]-->
+<script src="/path/to/js/polyClip-p.js"></script
+
+
+Создаем содержание страницы, но все изображения, которые будут обрезаться нужно поместить в контейнер div с
+ классом clipParent. 
+Скрипт удалит в контейнере тег изображения и заменит его элементом canvas .
+<div class="clipParent">
+  <img src="images/image.jpg" />
+</div>
