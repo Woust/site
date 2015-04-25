@@ -1,19 +1,23 @@
-IE7.js - это библиотека JavaScript, которая делает Microsoft Internet Explorer похожим на браузер, поддерживающий стандарты.
-
+IE7.js - СЌС‚Рѕ Р±РёР±Р»РёРѕС‚РµРєР° JavaScript, РєРѕС‚РѕСЂР°СЏ РґРµР»Р°РµС‚ Microsoft Internet Explorer РїРѕС…РѕР¶РёРј РЅР° Р±СЂР°СѓР·РµСЂ, 
+РїРѕРґРґРµСЂР¶РёРІР°СЋС‰РёР№ СЃС‚Р°РЅРґР°СЂС‚С‹. Р’ РЅРµР№ РёРјРµСЋС‚СЃСЏ Р·Р°РїР»Р°С‚РєРё РґР»СЏ РјРЅРѕРіРёС… РїСѓРЅРєС‚РѕРІ РёР· HTML Рё CSS,
+Р° С‚Р°РєР¶Рµ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ СЃ РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊСЋ РІ С„РѕСЂРјР°С‚Рµ PNG РЅР°С‡РёРЅР°СЋС‚ СЂР°Р±РѕС‚Р°С‚СЊ РїСЂР°РІРёР»СЊРЅРѕ РІ IE5 Рё IE6.
 IE7.js
 
-MSIE5.5-6 будет работать как MSIE7.
-
+MSIE5.5-6 Р±СѓРґРµС‚ СЂР°Р±РѕС‚Р°С‚СЊ РєР°Рє MSIE7.
 <!--[if lt IE 7]>
 <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
 <![endif]-->
 
-MSIE5.5-7 будет работать как MSIE8.
+IE8.js
+MSIE5.5-7 Р±СѓРґРµС‚ СЂР°Р±РѕС‚Р°С‚СЊ РєР°Рє MSIE8.
 <!--[if lt IE 8]>
 <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
 <![endif]-->
 
-MSIE5.5-8 будет работать как современный браузер, который поддерживает стандарты.
-<!--[if lt IE 9]>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-<![endif]-->
+РЎРєСЂРёРїС‚ Р±СѓРґРµС‚ РёСЃРїСЂР°РІР»СЏС‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ С‚РѕР»СЊРєРѕ СЃ РёРјРµРЅР°РјРё РїРѕ С€Р°Р±Р»РѕРЅСѓ: *-trans.png
+var IE7_PNG_SUFFIX = ".png";
+<script src="IE8.js">IE7_PNG_SUFFIX=".png";</script>
+var IE7_PNG_SUFFIX = ":";
+div.example {
+  background: url(my-trans.png) no-repeat;
+}
